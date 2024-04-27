@@ -71,14 +71,14 @@ holdEl.addEventListener('click', () => {
   if (playing) {
     if (playerEl0.classList.contains('player--active')) {
       addCurrentScoreToTotalScore(scoreEl0, currentEl0);
-      if (Number(scoreEl0.textContent) >= 50) {
+      if (Number(scoreEl0.textContent) >= 100) {
         winnerFoundHandler(playerEl0);
         playing = false;
       }
       switchPlayer();
     } else {
       addCurrentScoreToTotalScore(scoreEl1, currentEl1);
-      if (Number(scoreEl1.textContent) >= 50) {
+      if (Number(scoreEl1.textContent) >= 100) {
         winnerFoundHandler(playerEl1);
         playing = false;
       }
